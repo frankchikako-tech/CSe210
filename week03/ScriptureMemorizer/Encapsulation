@@ -1,0 +1,15 @@
+Encapsulation is when you hide the details of how something works inside a class and only let other parts of the program interact with it in safe ways. It’s like putting your data in a box and only giving people a way to use it without breaking it.
+
+A main benefit of encapsulation is that it protects your data from being changed accidentally. It also makes your code easier to maintain because you can change the inside of a class without affecting the rest of the program.
+
+In my program, I used encapsulation in the Scripture class. The text of the scripture is private, and we use methods to show it or hide words:
+
+class Scripture:
+    def __init__(self, reference, text):
+        self.__reference = reference
+        self.__text = text
+
+    def display_text(self):
+        return self.__text
+
+Here, __text is private, so it can’t be changed directly. You can only work with it through the methods, which keeps it safe and controlled.

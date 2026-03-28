@@ -25,6 +25,9 @@ public class Word
         {
             return new string('_', _text.Length);
         }
-        return _text;
+        else
+        {
+            return _text;
+        }
     }
 }
