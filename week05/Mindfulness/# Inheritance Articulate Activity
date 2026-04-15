@@ -1,0 +1,15 @@
+Inheritance is a concept in object-oriented programming where one class can take on the properties and behaviors of another class. In simple terms, it allows a new class to reuse code from an existing class instead of starting from scratch. The original class is called the base class, and the new class is called the derived class.
+
+One major benefit of inheritance is that it reduces repetition and makes code easier to maintain. Instead of writing the same code in multiple places, you write it once in the base class. If something needs to be fixed or updated, you only need to change it in one place, which saves time and prevents errors.
+
+In my Mindfulness Program, I used inheritance by creating a base Activity class that stores shared information like the activity name, description, and duration. Then I created specific classes like BreathingActivity, which inherit from Activity and add their own unique behavior.
+
+Here is an example from my code:
+
+public class BreathingActivity : Activity
+{
+    public BreathingActivity()
+        : base("Breathing Activity", "This activity will help you relax by guiding your breathing.") { }
+}
+
+This shows that BreathingActivity inherits from Activity, meaning it automatically has access to shared methods like starting and ending messages. This makes the program more organized and easier to expand in the future.
